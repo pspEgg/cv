@@ -1,0 +1,8 @@
+name: pspEgg.co
+pygments: true
+markdown: kramdown
+permalink: /:title
+exclude: [dev]
+prose: 
+  siteurl: "http://pspegg.co"
+  media: 'media'
