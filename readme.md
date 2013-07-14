@@ -1,12 +1,12 @@
 # Dan's Default Jekyll Site
 
-  @import "solarized.scss";
+    @import "solarized.scss";
 
-  body {
-    background: $base3;
-    font-size: 24px;
-    font-family: georgia;
-  }
+    body {
+      background: $base3;
+      font-size: 24px;
+      font-family: georgia;
+    }
 
 [Jekyll](http://jekyllrb.com) is a HTML & CSS helper
 expandable via the Ruby language. The Liquid language
