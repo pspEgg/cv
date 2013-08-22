@@ -59,7 +59,7 @@ title: pspEgg
         <div class="detail">{{ e.Detail | markdownify }}</div>
   {% endfor %}
   </div>
-  
+
   </div>
 
   <div class="publication">
@@ -67,7 +67,21 @@ title: pspEgg
     {{site.cv.Publications | markdownify}}
   </div>
 
-  <!-- {% for e in site.cv. %}{% endfor %} -->
+  <div class="extracurricular">
+  <h2>Extracurricular</h2>
+    {% for e in site.cv.Extracurricular %}
+    <h3>
+      {{e.Name}}
+      <span class="date">{{e.Date}}</span>
+    </h3>
+    <div class="detail">
+      {{ e.Detail | markdownify }}
+    </div>
+    {% endfor %}
+  </div>
+
+
+
 
   <hr class="clear" />
 </div>
