@@ -3,11 +3,112 @@
 ---
 
 @import "solarized.scss";
+@import "typekit.css";
 
 body {
   background: $base3;
-  font-size: 24px;
-  font-family: georgia;
+  font-size: 12px;
+  font-family: baskerville;
+  font-family: adobe caslon pro;
+  margin: 0;
+  line-height: 1.5em;
+}
+li {
+  //margin-bottom: 0.3em;
+}
+.home {
+  max-width: 840px;
+  margin: 0 auto;
+  background: #ececec;
+  padding: 5em 3em;
+  box-shadow: 3px 3px 5px 0px #666;
+}
+h1 {
+  font-variant: small-caps;
+  // font-family: franklin-gothic-urw;
+  text-align: center;
+  font-size: 2.5em;
+}
+.major{
+  font-weight: 400;
+}
+.education h3 {
+  font-weight: 400;
+}
+.score-title{
+  font-weight: 800;
+  // border-bottom: 1px solid black;
+  // text-decoration: underline;
+  // margin-bottom: 0;
+}
+.score-value{
+  //margin-top:0;
+  sup {
+    line-height: 1em;
+  }
+  //line-height: 1em;
+}
+h2 {
+  font-variant: small-caps;
+  letter-spacing: 0.05em;
+  border-bottom: 1px solid black;
+  margin-left: -0.5em;
+}
+h3{
+  position:relative;
+  //margin: 0;
+}
+.date{
+  font-style: italic;
+  position: absolute;
+  top: 0; 
+  right: 0;
+}
+.score{
+  display: inline-block;
+  width: 19%;
+  text-align: center;
+}
+
+/* EXPERIENCE */
+.experience{
+  h3{
+    margin: 0 0 0.3em 0;
+  }
+}
+.text{
+  // margin-bottom: 5em;
+}
+.detail{
+  //line-height: 1em;
+}
+.meta{
+  // margin-left: 0.6em;
+  line-height: 1em;
+  position: relative;
+  margin-bottom: 1em;
+}
+.institute {
+  font-style: italic;
+  position: absolute;
+  top: 0; 
+  right: 0;
+}
+.advisor{
+  // font-weight: 800;
+
 }
 
 
+.contact {
+  text-align: right;
+}
+.date {
+  font-weight: 400;
+  text-align: right;
+  display: inline-block;
+}
+.clear {
+  clear: both;
+  visibility: hidden;
+}

@@ -4,6 +4,60 @@ title: pspEgg
 ---
 
 <div class="home">
-  <h1>hey guys</h1>
-  <p>hey look at me!</p>
+  <h1>Hai Li</h1>
+  <div class="contact">
+  {% for c in site.cv.Contact %}
+    <div class="contact-entry">{{c[1]}}</div>
+  {% endfor %}
+  </div>
+
+<!--   <div class="profile">
+    <h2>Objective</h2>
+    {{site.cv.Objective}}
+  </div> -->
+
+  <div class="education">
+    <h2>Education</h2>
+    {% for e in site.cv.Education %}
+    <h3>
+        <span class="major">{{e.Major}}, </span>
+        <em>{{e.Institution}}</em>
+        <span class="date">{{e.Date}}</span>
+    </h3>
+
+    {% for s in e.Scores %}
+    <div class="score">
+      <div class="score-title">{{s[0]}}</div>
+      <div class="score-value">{{s[1]}}</div>
+    </div>
+    {% endfor %}
+
+    {% endfor %}
+  </div>
+
+  <div class="experience">
+    <h2>Experience</h2>
+  <div class="text">
+  {% for e in site.cv.Experience %}
+      <h3>{{e.Project}}
+        <span class="date">{{e.Date}}</span>
+      </h3>
+      <div class="meta">
+        <span class="position">{{e.Position}}</span>{% if e.Advisor %}<span class="advisor">, Advisor: {{e.Advisor}} </span>
+        {% endif %}
+        <span class="institute">{{e.Institute}}</span>
+      </div>
+      <div class="detail">{{ e.Detail | markdownify }}</div>
+  {% endfor %}
+  </div>
+  </div>
+
+  <div class="publication">
+  <h2>Pulications</h2>
+    {{site.cv.Publications | markdownify}}
+  </div>
+
+  <!-- {% for e in site.cv. %}{% endfor %} -->
+
+  <hr class="clear" />
 </div>
