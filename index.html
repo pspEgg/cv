@@ -67,7 +67,12 @@ title: pspEgg
     {{site.cv.Publications | markdownify}}
   </div>
 
-  <div class="extracurricular">
+  <div class="continued">
+    <div class="name">Hai Li</div>
+    <div class="cont">(Continued)</div>
+  </div>
+
+  <div class="extra">
   <h2>Extracurricular</h2>
     {% for e in site.cv.Extracurricular %}
     <h3>
@@ -81,6 +86,29 @@ title: pspEgg
   </div>
 
 
+
+  <div class="honors">
+    <h2>Honors & Achievements</h2>
+    <ul>{% for e in site.cv.Honors %}
+      <li>{{e.Name}}
+        <span class="date">{{e.Date}}</span>
+      </li>
+      {% endfor %}</ul>
+  </div>
+  <div class="skills">
+    <h2>Skills</h2>
+    <ul>{% for e in site.cv.Skills %}
+      <li class="detail">
+        {{e.Name}}: {{e.Detail}}
+      </li>
+      {% endfor %}</ul>
+  </div>
+  <div class="tests">
+    <h2>Standardized Tests</h2>
+    <ul>{% for e in site.cv.Tests %}
+      <li>{{e.Name}}</li>
+      {% endfor %}</ul>
+  </div>
 
 
   <hr class="clear" />

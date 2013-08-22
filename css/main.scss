@@ -16,12 +16,22 @@ body {
 li {
   //margin-bottom: 0.3em;
 }
+p {
+  margin: 0.5em 0 0.5em 1em;
+}
+ul {
+  margin: 0.5em 0;
+}
 .home {
   max-width: 645px;
   margin: 0 auto;
   background: #ececec;
   padding: 5em 3em;
-  box-shadow: 3px 3px 5px 0px #666;
+}
+@media screen {
+  .home{
+    box-shadow: 3px 3px 5px 0px #666;
+  }
 }
 h1 {
   font-variant: small-caps;
@@ -41,14 +51,15 @@ h1 {
   // text-decoration: underline;
   // margin-bottom: 0;
 }
+sup {
+  line-height: 1em;
+}
 .score-value{
   //margin-top:0;
-  sup {
-    line-height: 1em;
-  }
   //line-height: 1em;
 }
 h2 {
+  margin: 0.5em 0;
   font-variant: small-caps;
   letter-spacing: 0.05em;
   border-bottom: 1px solid black;
@@ -56,7 +67,7 @@ h2 {
 }
 h3{
   position:relative;
-  //margin: 0;
+  margin: 0.25em 0;
 }
 .date{
   font-size: 0.85em;
@@ -100,7 +111,16 @@ h3{
 
 }
 
-
+.continued{
+  page-break-before: always;
+  font-size: 1.3em;
+  text-align: center;
+  font-variant: small-caps;
+  .name{
+    font-size: 1.3em;
+    font-weight: 800;
+    }
+}
 .contact {
   text-align: right;
 }
@@ -109,6 +129,20 @@ h3{
   text-align: right;
   display: inline-block;
 }
+
+/* Honors */
+.skills, .tests, .honors{
+  ul { 
+    list-style: none; 
+    padding-left: 1em;
+  }
+  li {
+    position: relative;
+  }
+}
+
+
+
 .clear {
   clear: both;
   visibility: hidden;
