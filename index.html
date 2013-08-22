@@ -49,7 +49,17 @@ title: pspEgg
       </div>
       <div class="detail">{{ e.Detail | markdownify }}</div>
   {% endfor %}
+
+  <!-- Intership Format -->
+  {% for e in site.cv.Interships %}
+        <h3>
+        Intership at {{e.Institute}}
+        <span class="date">{{e.Date}}</span>
+        </h3>
+        <div class="detail">{{ e.Detail | markdownify }}</div>
+  {% endfor %}
   </div>
+  
   </div>
 
   <div class="publication">
